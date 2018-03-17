@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<fragment android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/master_list_fragment"
+    android:name="com.training.fragmentkostumapp.fragment.MasterListFragment"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+</fragment>
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-9803172382468425/9625691664"></com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

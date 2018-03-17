@@ -1,0 +1,69 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:baselineAligned="false"
+ android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:baselineAligned="false"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <!--set static untuk master list-->
+    <fragment
+        android:layout_width="400dp"
+        android:layout_height="match_parent"
+        android:id="@+id/master_list_fragment"
+        android:name="com.training.fragmentkostumapp.fragment.MasterListFragment"
+        ></fragment>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_dark"></View>
+    <LinearLayout
+        android:id="@+id/android_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <FrameLayout
+            android:id="@+id/kepala_container"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            >
+
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/badan_container"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            >
+
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/kaki_container"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            >
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-9803172382468425/9625691664"></com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

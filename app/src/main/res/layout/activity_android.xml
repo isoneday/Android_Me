@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.training.fragmentkostumapp.activity.AndroidActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:id="@+id/android_linear_layout"
+        android:padding="16dp">
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="ca-app-pub-9803172382468425/7493997124"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+        </com.google.android.gms.ads.AdView>
+
+        <FrameLayout
+            android:id="@+id/kepala_container"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            >
+
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/badan_container"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            >
+
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/kaki_container"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            >
+
+        </FrameLayout>
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="ca-app-pub-9803172382468425/9625691664"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+        </com.google.android.gms.ads.AdView>
+
+    </LinearLayout>
+
+
+</ScrollView>
